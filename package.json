@@ -1,0 +1,16 @@
+{
+  "name": "Notes",
+  "version": "1.0.0",
+  "description": "This repository is used to keep track of my notes in a readable, scaffolding, modularized format 😍",
+  "main": "index.js",
+  "repository": "https://github.com/rileymiller/notes.git",
+  "author": "Riley Miller <riley.miller@workday.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "make": "plop"
+  },
+  "dependencies": {
+    "plop": "^2.5.3"
+  }
+}
