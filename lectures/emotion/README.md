@@ -9,11 +9,11 @@
 ### Notes
 
 Build system for front end has gotten more complex. 
-    - pure stylesheets > preprocessor > css in js
-    - single file components, combine css/js/html
-    - separate sources living in different files causes issues
-        - hard to maintain, styles are global and create conflicting styles.
-        - dump everything in the browser
+- pure stylesheets > preprocessor > css in js
+- single file components, combine css/js/html
+- separate sources living in different files causes issues
+    - hard to maintain, styles are global and create conflicting styles.
+    - dump everything in the browser
     
 
 Emotion behind the scene:
@@ -106,9 +106,25 @@ styled.div(`
     margin-left: $(spacing.xs)
 `)
 
-graphql`
-    ;fadfads
-`
+// graphql query
+export const pageQuery = graphql`
+    query DocPage($id: String) {
+        mdx(id: { eq: $id }) {
+            id
+            body
+            excerpt
+            frontmatter {
+                title
+                weight
+                icon
+            }
+            headings {
+                depth
+                value
+            }
+        }
+    }
+`;
 ```
 
 #### String styles vs. Object Styles
