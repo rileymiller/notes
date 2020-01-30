@@ -1,4 +1,4 @@
-# 1/30/2020 React Emotion with Justin Seivenpiper
+# 1/30/2020 React Emotion with Justin Sievenpiper
 
 **Author: Riley Miller**
 
