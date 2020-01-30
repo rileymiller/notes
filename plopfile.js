@@ -11,9 +11,15 @@ module.exports = function (plop) {
     // controller generator
     plop.setGenerator('newNotes', {
         description: 'New note!!',
-        prompts: [{
+        prompts: [
+        {
+          type: 'input',
+          name: 'author_name',
+          message: 'Enter your name',
+        },
+        {
             type: 'input',
-            name: 'name',
+            name: 'lecture_name',
             message: 'Enter lecture name (i.e Intro to Kubernetes)'
         },
         {
@@ -28,7 +34,7 @@ module.exports = function (plop) {
         }],
         actions: [{
             type: 'add',
-            path: 'lectures/{{name}}/README.md',
+            path: 'lectures/{{lecture_name}}/README.md',
             templateFile: 'plop-templates/notes.hbs'
         }]
     });
